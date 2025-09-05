@@ -8,14 +8,14 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#hero" class="brand">Portafolio de David Suárez</a>
+      <a href="#hero" class="brand" id="header_brand"></a>
 
       <nav class="nav">
         <a href="#about" class="nav-link" id="nav_about">Sobre mí</a>
@@ -29,32 +29,36 @@
   </header>
 
   <!-- Hero -->
-  <section id="hero" class="hero section">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1 class="display" id="hero_title">Hola, soy David.</h1>
-        <p class="lead" id="hero_lead">
-          M. Sc. en Ciencias | Especializado en Ciencia de Datos
-          9 años de biotecnología, inmunología y transcriptómica. 3 años creando soluciones con datos, programación y desarrollo web.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-accent" id="hero_cta_work">Proyectos</a>
-          <a href="#contact" class="btn btn-ghost" id="hero_cta_contact">Contáctame</a>
-        </div>
+<section id="hero" class="hero section">
+  <div class="container hero-container">
+    <!-- Texto -->
+    <div class="hero-text">
+      <h1 class="display" id="hero_title">Hola, soy David Suárez.</h1>
+      <p class="lead" id="hero_lead"></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-accent" id="hero_cta_work">Proyectos</a>
+        <a href="#contact" class="btn btn-ghost" id="hero_cta_contact">Contáctame</a>
       </div>
-      <figure class="hero-figure">
-        <img src="assets/me.jpg" alt="David sonriendo" class="hero-img" />
-        <figcaption class="visually-hidden">Retrato de David Suárez</figcaption>
-      </figure>
     </div>
-  </section>
+
+    <!-- Imagen -->
+    <figure class="hero-figure">
+      <img id="hero_img" src="" alt="Momento 1" class="hero-img" />
+      <figcaption id="hero_caption"></figcaption>
+      <div class="hero-buttons">
+       <button id="hero_prev">Anterior</button>
+       <button id="hero_next">Siguiente</button>
+      </div>
+    </figure>
+  </div>
+</section>
 
   <!-- About -->
   <section id="about" class="about section section-alt">
     <div class="container">
       <h2 id="about_title">Sobre mí</h2>
       <p id="about_text">
-        Durante 9 años profundicé en las ciencias biológicas, desde la biotecnología molecular hasta la inmunología y la transcriptómica. Ese camino me llevó a fundar Vida en bebida, una empresa que promueve superalimentos probióticos con impacto positivo en la salud. Desde hace 3 años expandí mi perfil hacia la programación y el manejo de Datos, explorando cómo la tecnología puede amplificar tanto la investigación como los negocios. Hoy busco impulsar proyectos en donde datos, tecnología y/o ciencia converjan para generar innovación con impacto.
+        9 años profundicé en las ciencias biológicas, desde la biotecnología molecular hasta la inmunología y la transcriptómica. Ese camino me llevó a fundar Vida en bebida, una empresa que promueve superalimentos probióticos con impacto positivo en la salud. Desde hace 3 años expandí mi perfil hacia la programación y el manejo de Datos, explorando cómo la tecnología puede amplificar tanto la investigación como los negocios. Hoy busco impulsar proyectos en donde datos, tecnología y/o ciencia converjan para generar innovación con impacto.
       </p>
 
       <ul class="bullet-grid">
@@ -126,6 +130,72 @@
     </div>
   </section>
 
+<!-- Librerías y Tecnologías -->
+<section id="libraries" class="section section-alt">                                      
+  <div class="container">
+    <h2 id="libraries_title">Librerías y Tecnologías</h2>
+
+    <!-- Lenguajes / Tecnologías base -->
+    <div class="library-group" id="core_tech">
+      <h3 id="core_tech_title">Lenguajes y Tecnologías</h3>
+      <div class="icon-grid">
+        <div class="icon-item">
+          <i class="fa-brands fa-python"></i> <span id="lang_python">Python</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-database"></i> <span id="lang_sql">SQL</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-r-project"></i> <span id="lang_r">R</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-file-excel"></i> <span id="lang_excel">Excel</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-aws"></i> <span id="lang_aws">AWS</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-microsoft"></i> <span id="lang_azure">Azure</span>
+        </div>
+        <div class="icon-item">
+  <i class="fa-brands fa-html5"></i> <span id="lang_html">HTML</span>
+</div>
+<div class="icon-item">
+  <i class="fa-brands fa-css3-alt"></i> <span id="lang_css">CSS</span>
+</div>
+<div class="icon-item">
+  <i class="fa-brands fa-js"></i> <span id="lang_js">JavaScript</span>
+</div>
+      </div>
+    </div>
+
+    <!-- Librerías / Frameworks -->
+    <div class="library-group" id="libraries_list">
+      <h3 id="libraries_title_sub"></h3>
+      <div class="icon-grid">
+        <div class="icon-item">
+          <i class="fa-solid fa-chart-line"></i> <span id="lib_pandas">Pandas</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-brain"></i> <span id="lib_sklearn">Scikit-learn</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-chart-bar"></i> <span id="lib_matplotlib">Matplotlib</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-water"></i> <span id="lib_seaborn">Seaborn</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-diagram-project"></i> <span id="lib_ggplot2">ggplot2</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-layer-group"></i> <span id="lib_tidyverse">Tidyverse</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Contact -->
   <section id="contact" class="contact section section-alt">
     <div class="container">
@@ -155,5 +225,12 @@
       <small id="footer_text">© <span id="year"></span> David Suárez — Construido con cuidado.</small>
     </div>
   </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("JS cargado");
+    const img = document.getElementById("hero_img");
+    if (img) img.src = "assets/graduacion.jpg";
+});
+</script>
 </body>
 </html>
