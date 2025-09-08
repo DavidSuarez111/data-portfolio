@@ -1,0 +1,17 @@
+
+1. Integrar el video
+
+css y js
+2. Botones efectos. -Botones de redes sociales, 
+
+css 
+3. Espacios 
+2. Tamaños de las palábras. 
+2. Transiciones de color más marcadas de los botones. 
+3. 
+4. Descargar el CV
+5. Pulir los proyectos que se quedan en el CV
+6. Integrar los proyectos al portfolio
+7. Hacer los videos en mejor calidad. ¿Cómo? Saquito fino, en el grounded coffee. Fresón pa. 
+8. Espacios relativos para que se pueda usar en todo aparato. 
+9. 
