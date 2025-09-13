@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Suárez — Portafolio de Ciencia de Datos</title>
+  <meta name="description" content="Portafolio de ciencia de datos de David Suárez: proyectos, background en ciencias biológicas y contacto." />
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner" >
+      <a href="#hero" class="brand" id="header_brand"></a>
+
+      <nav class="nav">
+        <a href="#about" class="nav-link" id="nav_about">Sobre mí</a>
+        <a href="#projects" class="nav-link" id="nav_projects">Proyectos</a>
+        <a href="#contact" class="nav-link" id="nav_contact">Contáctame</a>
+      </nav>
+
+      <button id="lang-toggle" class="btn btn-outline" aria-label="Toggle language">EN/ES</button>
+      <button id="theme-toggle" class="btn btn-outline" aria-label="Toggle color theme">☾</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 class="display" id="hero_title">Hola, soy David.</h1>
+        <p class="hero-lead" id="hero_lead">
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-accent" id="hero_cta_work">Proyectos</a>
+          <a href="#contact" class="btn btn-ghost" id="hero_cta_contact">Contáctame</a>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <img id="hero_img" src="" alt="David sonriendo" class="hero-img" />
+        <figcaption id="hero_caption"></figcaption>
+        <div class="hero-buttons">
+          <button id="hero_prev"></button>
+          <button id="hero_next"></button>
+         </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section section-alt">
+    <div class="container about-content">
+      <div class="text-wrap">
+      <h2 id="about_title">Sobre mí</h2>
+      <p id="about_text">
+        Durante 9 años profundicé en las ciencias biológicas, desde la biotecnología molecular hasta la inmunología y la transcriptómica. Ese camino me llevó a fundar Vida en bebida, una empresa que promueve superalimentos probióticos con impacto positivo en la salud. Desde hace 3 años expandí mi perfil hacia la programación y el manejo de Datos, explorando cómo la tecnología puede amplificar tanto la investigación como los negocios. Hoy busco impulsar proyectos en donde datos, tecnología y/o ciencia converjan para generar innovación con impacto.
+      </p>
+
+      <ul class="bullet-grid">
+        <li id="about_1">🌱 Ciencias biológicas</li>
+        <li id="about_2">🧠 Proyectos en NLP y ML</li>
+        <li id="about_3">⚙️ Generación de sitios web</li>
+        <li id="about_4">☕️ Entusiasta del kéfir</li>
+      </ul>
+      </div>
+
+      <div class="video-wrap">
+        <video controls preload="metadata" class="video" id="about_video">
+          <source src="assets/es-1.mp4" type="video/mp4" id="about_video_source" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 id="projects_title">Proyectos</h2>
+
+      <div class="cards">
+        <!-- Project Card 1 -->
+        <article class="card">
+          <header class="card-header">
+            <h3 id="project1_title">Asistente de Sentimiento de WhatsApp</h3>
+            <span class="chip">NLP · BERT</span>
+          </header>
+          <p id="project1_desc">
+            Asistente basado en BERT para análisis de sentimiento y tono en comunicación saludable. Usa reglas + señales de ML alineadas a límites definidos.
+          </p>
+          <footer class="card-footer">
+            <a href="#" class="link">Repo</a>
+            <a href="#" class="link">Demo</a>
+          </footer>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="card">
+          <header class="card-header">
+            <h3 id="project2_title">Plataforma de Entrega de Kéfir</h3>
+            <span class="chip">Flask · React</span>
+          </header>
+          <p id="project2_desc">
+            Gestión de pedidos, lógica de decisiones y entregas para un negocio de kéfir. API limpia con Flask, interfaz moderna en React.
+          </p>
+          <footer class="card-footer">
+            <a href="#" class="link">Repo</a>
+            <a href="#" class="link">Live</a>
+          </footer>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="card">
+          <header class="card-header">
+            <h3 id="project3_title">Galería de Data Storytelling</h3>
+            <span class="chip">Viz · EDA</span>
+          </header>
+          <p id="project3_desc">
+            Cuadernos curados con visuales nítidos estilo Apple. Énfasis en narrativa, reproducibilidad y análisis accesible.
+          </p>
+          <footer class="card-footer">
+            <a href="#" class="link">Notebooks</a>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Librerías y Tecnologías -->
+<section id="libraries" class="section section-alt">
+  <div class="container">
+    <h2 id="libraries_title">Librerías y Tecnologías</h2>
+
+    <!-- Lenguajes / Tecnologías base -->
+    <div class="library-group" id="core_tech">
+      <h3 id="core_tech_title">Lenguajes y Tecnologías</h3>
+      <div class="icon-grid">
+        <div class="icon-item">
+          <i class="fa-brands fa-python"></i> <span id="lang_python">Python</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-database"></i> <span id="lang_sql">SQL</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-r-project"></i> <span id="lang_r">R</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-file-excel"></i> <span id="lang_excel">Excel</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-aws"></i> <span id="lang_aws">AWS</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-microsoft"></i> <span id="lang_azure">Azure</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-html5"></i> <span id="lang_html">HTML</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-css3-alt"></i> <span id="lang_css">CSS</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-brands fa-js"></i> <span id="lang_js">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Librerías / Frameworks -->
+    <div class="library-group" id="libraries_list">
+      <h3 id="libraries_title_sub">Librerías y Frameworks</h3>
+      <div class="icon-grid">
+        <div class="icon-item">
+          <i class="fa-solid fa-chart-line"></i> <span id="lib_pandas">Pandas</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-brain"></i> <span id="lib_sklearn">Scikit-learn</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-chart-bar"></i> <span id="lib_matplotlib">Matplotlib</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-water"></i> <span id="lib_seaborn">Seaborn</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-diagram-project"></i> <span id="lib_ggplot2">ggplot2</span>
+        </div>
+        <div class="icon-item">
+          <i class="fa-solid fa-layer-group"></i> <span id="lib_tidyverse">Tidyverse</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section section-alt">
+    <div class="container">
+      <h2 id="contact_title">Contáctame</h2>
+      <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('Gracias! Este formulario es solo demo.');">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" required placeholder="Tu nombre" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="tucorreo@ejemplo.com" />
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Cuéntame de ti. ¿En qué podemos colaborar?"></textarea>
+        </div>
+        <button type="submit" id="contact_send" class="btn btn-accent">Enviar</button>
+      </form>
+      <p class="form-hint">Más adelante se puede conectar a un API Flask + base de datos.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <small id="footer_text">© <span id="year"></span> David Suárez — Construido con cuidado.</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
