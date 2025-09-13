@@ -1,0 +1,1 @@
+el que esté dentro de una carpeta hace que parte del código no funciona por eso lo pasé para afuera
